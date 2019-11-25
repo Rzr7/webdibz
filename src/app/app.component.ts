@@ -18,6 +18,10 @@ export class AppComponent  implements OnInit {
 
   }
 
+  getDb() {
+    return this.db;
+  }
+
   ngOnInit() {
     console.log('This auth', this.db.afAuth.auth);
   }
