@@ -8,9 +8,9 @@ import { auth } from 'firebase';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent  implements OnInit{
+export class AppComponent  implements OnInit {
   title = 'webdibz';
-  
+
   constructor(
     private db: DatabaseService,
     private router: Router
@@ -19,8 +19,8 @@ export class AppComponent  implements OnInit{
   }
 
   ngOnInit() {
-    console.log('This auth', this.db.afAuth.auth)
+    console.log('This auth', this.db.afAuth.auth);
   }
- 
+
 
 }

@@ -10,22 +10,22 @@ import { auth } from 'firebase';
 })
 export class DatabaseService {
 
-items: Observable<any[]>
+items: Observable<any[]>;
 
   constructor(
     public db: AngularFirestore,
     public afAuth: AngularFireAuth
-    ) { 
-      this.items = db.collection('templates').valueChanges();
-      this.items.subscribe(e=>{
-        console.log(e)
-      })
+  ) {
+    this.items = db.collection('templates').valueChanges();
+    this.items.subscribe(e => {
+        console.log(e);
+    });
    }
 
-   login() {
+  login() {
      !this.afAuth.auth.currentUser ?
     this.afAuth.auth.signInWithPopup(new auth.GoogleAuthProvider()) :
-    this.afAuth.auth.signOut()
+    this.afAuth.auth.signOut();
   }
 
 }

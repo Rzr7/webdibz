@@ -9,6 +9,8 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { DatabaseService } from '../shared/database.service';
 import { environment } from '../environments/environment';
+import { MatButtonModule } from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -20,8 +22,9 @@ import { environment } from '../environments/environment';
     BrowserAnimationsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
-    AngularFireAuthModule
-
+    AngularFireAuthModule,
+    MatButtonModule,
+    MatToolbarModule
   ],
   providers: [DatabaseService],
   bootstrap: [AppComponent]
