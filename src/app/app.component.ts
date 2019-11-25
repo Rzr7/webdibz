@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DatabaseService } from 'src/shared/database.service';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'webdibz';
   
+  constructor(private db: DatabaseService) {
+
+  }
 
 }
