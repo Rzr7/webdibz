@@ -1,5 +1,7 @@
+
 export const environment = {
   production: true,
+  entryPoint: 'LandingModule',
   firebase: {
     apiKey: 'AIzaSyC8QwEzKoVC7joiURFOJaUDK4FgJN5XFyg',
     authDomain: 'webdibz.firebaseapp.com',

@@ -1,4 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+/*
+NOTE:
+Don't import fonts here. Import inside index.html because doing ng build does not import any fonts from here for the project.
+
+*/
+
+$primary: #313131;
+$border-primary: #777777;
+$padding: 0.5rem;
+$margin: 0.5rem;
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+

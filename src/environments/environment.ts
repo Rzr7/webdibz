@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  entryPoint: 'AppModule',
   firebase: {
     apiKey: 'AIzaSyC8QwEzKoVC7joiURFOJaUDK4FgJN5XFyg',
     authDomain: 'webdibz.firebaseapp.com',
