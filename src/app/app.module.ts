@@ -11,10 +11,20 @@ import { DatabaseService } from '../shared/database.service';
 import { environment } from '../environments/environment';
 import { MatButtonModule } from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { PropertiesComponent } from './properties/properties.component';
+import { TreeComponent } from './tree/tree.component';
+import { WorkspaceComponent } from './workspace/workspace.component';
+import { CanvasComponent } from './canvas/canvas.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidebarComponent,
+    PropertiesComponent,
+    TreeComponent,
+    WorkspaceComponent,
+    CanvasComponent
   ],
   imports: [
     BrowserModule,
