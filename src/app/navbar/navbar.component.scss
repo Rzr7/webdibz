@@ -1,0 +1,22 @@
+@import '../../styles.scss';
+
+
+.login {
+  padding: 0.5rem;
+  margin: 2rem;
+  background-color: #313131;
+  color: white;
+}
+
+.primary-color {
+  background-color: $primary;
+}
+
+.login-button {
+    background-color: #777777;
+    border-color: $border-primary;
+}
+
+.spacer {
+    flex: 1;
+  }

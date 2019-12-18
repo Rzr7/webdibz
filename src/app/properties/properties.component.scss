@@ -1,0 +1,74 @@
+@import '../../styles.scss';
+
+.properties {
+    height: 100%;
+    
+    .properties-tab {
+        height: 100%;
+        width: 300px;
+        background-color: $primary;
+    }
+    
+    .nav-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .btn {
+            width: 50%;
+            border-radius: 0;
+            line-height: 18px;
+        }
+    }
+
+    .property {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5rem;
+        
+        .dropdown-button {
+            color: white;
+            background-color: #373737;
+            width: 30%;
+            margin-right: 1rem;
+            position: relative;
+            
+        }
+        p {
+            font-weight: normal;
+            color: white;
+            // padding: 0 0.2rem;
+            font-size: 0.8rem;
+            line-height: normal;
+            
+        }
+    }
+}
+
+.icon-wrapper {
+    color: white;
+    // width: 5px;
+    font-size: 20px;
+    line-height: 1.9rem;
+    
+    // margin-left: 0.6rem;
+    // min-height: 1.6rem;
+    
+    position: absolute;
+    // padding: 0.5rem;
+    // height: 1.6em;
+    
+}
+.dropdown-icon {
+    color: white;
+    min-height: 1.6rem;
+}
+
+.inner-text {
+    position: absolute;
+    left: 0;
+    padding-right: 1rem;
+}
+

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faSortDown } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-properties',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./properties.component.scss']
 })
 export class PropertiesComponent implements OnInit {
+  icon = faSortDown;
+  properties: Array<any> = [
+    {name: 'Height', option: 'choice'}
+  ]
 
   constructor() { }
 

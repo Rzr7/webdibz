@@ -1,1 +1,23 @@
-<p>properties works!</p>
+<div class="properties">
+
+    <div class="properties-tab">
+        <div class="nav-buttons">
+            <button mat-button class="btn">Properties</button>
+            <button mat-button class="btn">Something else</button>
+
+        </div>
+
+        <div class="property" *ngFor="let propertie of properties">
+            <p>{{propertie.name}}:</p>
+            <button mat-button class="dropdown-button">
+                <span class="inner-text">
+                    {{propertie.option}}
+                </span>
+                    <span class="icon-wrapper">
+                        <fa-icon [icon]="icon" classes="dropdown-icon"></fa-icon>
+                    </span>
+            </button>
+        </div>
+
+    </div>
+</div>
