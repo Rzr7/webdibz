@@ -37,7 +37,6 @@ export class SidebarComponent implements OnInit {
 
   toggleCurrentlyOpened(ref) {
    this.currentlyOpened = ref
-   console.log(ref)
   }
 
 }
