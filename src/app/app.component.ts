@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DatabaseService } from 'src/shared/database.service';
 import { Router } from '@angular/router';
 import { auth } from 'firebase';
+import * as $ from 'jquery' 
 
 @Component({
   selector: 'app-root',
@@ -24,6 +25,9 @@ export class AppComponent  implements OnInit {
 
   ngOnInit() {
     console.log('This auth', this.db.afAuth.auth);
+
+    //jQuery scripts
+    $('.property.dropdown-button')
   }
 
 

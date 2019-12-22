@@ -1,0 +1,22 @@
+<div class="sidebar">
+    <div class="nav-buttons">
+        <button mat-flat-button (click)="toggleCurrentlyOpened('templates')">Templates</button>
+        <button mat-flat-button (click)="toggleCurrentlyOpened('blocks')">Blocks</button>
+    </div>
+
+    <h2>{{currentlyOpened}}</h2>
+
+    <div class="template-list list" *ngIf="currentlyOpened=='templates'">
+        <div class="card" *ngFor="let template of templates">
+            <div class="img">img goes here, but div for now</div>
+            <p>{{template.title}}</p>
+        </div>
+    </div>
+
+    <div class="block-list list" *ngIf="currentlyOpened=='blocks'">
+        <div class="card" *ngFor="let block of blocks">
+            <div class="img">img goes here, but div for now</div>
+            <p>{{block.title}}</p>
+        </div>
+    </div>
+</div>

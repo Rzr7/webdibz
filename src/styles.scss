@@ -10,7 +10,19 @@ $border-primary: #777777;
 $padding: 0.5rem;
 $margin: 0.5rem;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { 
+    height: 100%;
+}
+body { 
+    margin: 0; 
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
 
+
+.btn {
+    color: white;
+    background-color: #393939;
+    padding: 0.3rem;
+    font-family: "Roboto";
+}
 
