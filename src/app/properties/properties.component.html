@@ -1,34 +1,40 @@
 <div class="properties ui-widget-content">
 
     <div class="properties-tab">
-    
-        <div class="nav-buttons">
-            <button mat-button class="btn" (click)="toggleTab('props')">Properties</button>
-            <button mat-button class="btn"  (click)="toggleTab('something')">Something else</button>
-        </div>
+      <mat-tab-group animationDuration="500ms" [color]="'accent'" id="tab-group" [dynamicHeight]='true'>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">view_headline</mat-icon>
+            Properties
+          </ng-template>
 
-        <div  *ngIf="openedTab=='props'">
-
+          <div class="properties-list">
             <div class="property"  *ngFor="let property of properties">
-                <p>{{property.name}}:</p>
-                <button mat-button class="dropdown-button">
-                    <div class="both">
-                            <span class="inner-text">
-                                    {{property.option}}
-                            </span>
-                            <span class="icon-wrapper">
-                                <fa-icon [icon]="icon" classes="dropdown-icon"></fa-icon>
-                            </span>
-                    </div>
-                        
-                </button>
+              <p>{{property.name}}:</p>
+              <button mat-button class="dropdown-button">
+                <div class="both">
+                  <span class="inner-text">
+                    {{property.option}}
+                  </span>
+                  <span class="icon-wrapper">
+                    <fa-icon [icon]="icon" classes="dropdown-icon"></fa-icon>
+                  </span>
+                </div>
+              </button>
             </div>
-        </div>
+          </div>
 
-        <div class="property" *ngIf="openedTab=='something'"> <!--  Change line 6 too then -->
+        </mat-tab>
+        <mat-tab>
+          <ng-template mat-tab-label>
+            <mat-icon class="tab-icon">update</mat-icon>
+            Something
+          </ng-template>
 
-                <!-- Something else's content -->
-            </div>
-            </div>
-
+          <div class="properties-list">
+            <!-- Something else's content -->
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
 </div>

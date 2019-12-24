@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { faSortDown } from '@fortawesome/free-solid-svg-icons'
-import * as $ from 'jquery'
-import "jquery-ui/ui/widgets/resizable.js"
+import { faSortDown } from '@fortawesome/free-solid-svg-icons';
+import * as $ from 'jquery';
+import 'jquery-ui/ui/widgets/resizable.js';
 
 @Component({
   selector: 'app-properties',
@@ -12,21 +12,22 @@ export class PropertiesComponent implements OnInit {
   icon = faSortDown;
   properties: Array<any> = [
     {name: 'Height', option: 'choice'}
-  ]
-  openedTab = "props"
+  ];
+  openedTab = 'props';
 
   constructor() { }
 
   ngOnInit() {
+    // tslint:disable-next-line:only-arrow-functions
     $(document).ready(function() {
-      $(".properties").resizable({ // doesnt work :C
+      $('.properties').resizable({ // doesnt work :C
       });
     } );
   }
 
 
   toggleTab(ref) {
-    this.openedTab = ref
+    this.openedTab = ref;
   }
 
 }

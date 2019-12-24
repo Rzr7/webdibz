@@ -33,9 +33,7 @@
               "./node_modules/jquery-ui/themes/base/resizable.css"
             ],
             "scripts": [
-              "./node_modules/jquery/dist/jquery.min.js",
-              "./node_modules/jquery-ui/jquery-ui.js"
-              
+              "./node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {

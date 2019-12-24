@@ -18,6 +18,11 @@ import { TreeComponent } from './tree/tree.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
 import { CanvasComponent } from './canvas/canvas.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatIconModule} from '@angular/material/icon';
+import {MatCardModule} from '@angular/material/card';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -38,7 +43,12 @@ import { NavbarComponent } from './navbar/navbar.component';
     AngularFireAuthModule,
     FontAwesomeModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatButtonToggleModule,
+    MatTabsModule,
+    MatIconModule,
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [DatabaseService],
   bootstrap: [AppComponent]

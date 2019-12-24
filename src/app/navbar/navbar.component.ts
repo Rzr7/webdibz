@@ -23,4 +23,8 @@ export class NavbarComponent implements OnInit {
     return this.db;
   }
 
+  test() {
+    console.log(this.getDb().afAuth.auth);
+  }
+
 }

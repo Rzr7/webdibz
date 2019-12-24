@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatButton } from '@angular/material'
+
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -9,8 +9,8 @@ export class SidebarComponent implements OnInit {
 
 
   // TODO: Get the template list dynamically and apply to the layout
-  currentlyOpened: string = 'templates'
-  
+  currentlyOpened = 'templates';
+
   templates: Array<any> = [
     {
       title: 'test-template'
@@ -18,7 +18,7 @@ export class SidebarComponent implements OnInit {
     {
       title: 'second-template'
     }
-  ]
+  ];
 
   blocks: Array<any> = [
     {
@@ -27,7 +27,7 @@ export class SidebarComponent implements OnInit {
     {
       title: 'second-block'
     }
-  ]
+  ];
 
 
   constructor() { }
@@ -36,7 +36,8 @@ export class SidebarComponent implements OnInit {
   }
 
   toggleCurrentlyOpened(ref) {
-   this.currentlyOpened = ref
+    console.log(ref);
+   this.currentlyOpened = ref;
   }
 
 }

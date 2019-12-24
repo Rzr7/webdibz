@@ -2,15 +2,16 @@
 
 .properties {
     height: 100%;
-    
+
     .properties-tab {
         height: 100%;
-        width: 300px;
+        width: 100%;
+        max-width: 350px;
         background-color: $primary;
         // overflow: scroll;
         // resize: horizontal;
     }
-    
+
     .nav-buttons {
         width: 100%;
         display: flex;
@@ -24,12 +25,18 @@
         }
     }
 
+    .properties-list {
+      margin-top: 20px;
+      padding-left:15px;
+      padding-right:15px;
+    }
+
     .property {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 0.5rem;
-        
+
         .dropdown-button {
             color: white;
             background-color: #373737;
@@ -40,7 +47,7 @@
             // flex-direction: row;
             // justify-content: space-evenly;
             line-height: 15px;
-            
+
         }
         p {
             font-weight: normal;
@@ -48,7 +55,7 @@
             // padding: 0 0.2rem;
             font-size: 0.8rem;
             line-height: normal;
-            
+
         }
     }
 }
@@ -63,7 +70,7 @@
     padding-bottom: 1rem;
     // position: absolute;
 
-    
+
 }
 
 .both {
@@ -73,7 +80,7 @@
 }
 .dropdown-icon {
     color: white;
-    
+
     // position: absolute;
 }
 
