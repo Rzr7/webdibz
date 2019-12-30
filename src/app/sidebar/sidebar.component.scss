@@ -2,6 +2,7 @@
     width: 100%;
     background-color: #313131;
     height: 100%;
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.26);
 
     .template-list, .block-list {
       display: flex;
@@ -12,6 +13,9 @@
 
       .card {
         margin-top: 15px;
+        // padding: 5px 0;
+        margin-right: 5px;
+        margin-left: 5px;
         cursor: pointer;
       }
     }

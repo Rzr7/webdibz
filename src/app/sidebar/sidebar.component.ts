@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { UtilsService } from '../../shared/utils.service'
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -30,9 +30,11 @@ export class SidebarComponent implements OnInit {
   ];
 
 
-  constructor() { }
+  constructor(private utils:UtilsService) { }
 
   ngOnInit() {
+
+    this.utils.makeResizable('.sidebar', 'right')
   }
 
   toggleCurrentlyOpened(ref) {
