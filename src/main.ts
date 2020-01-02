@@ -17,5 +17,7 @@ if (environment.production) {
  * We can later do routing or a dev button to quickly switch between the two
  */
 
-platformBrowserDynamic().bootstrapModule(environment.entryPoint == 'AppModule' ? AppModule : LandingModule)
+// platformBrowserDynamic().bootstrapModule(environment.entryPoint == 'AppModule' ? AppModule : LandingModule)
+platformBrowserDynamic().bootstrapModule(AppModule)
+
   .catch(err => console.error(err));
