@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faSortDown } from '@fortawesome/free-solid-svg-icons';
 import * as $ from 'jquery';
 import 'jquery-ui/ui/widgets/resizable.js';
+import { UtilsService } from 'src/shared/utils.service';
 
 @Component({
   selector: 'app-properties',
@@ -15,14 +16,10 @@ export class PropertiesComponent implements OnInit {
   ];
   openedTab = 'props';
 
-  constructor() { }
+  constructor(private utils:UtilsService) { }
 
   ngOnInit() {
-    // tslint:disable-next-line:only-arrow-functions
-    $(document).ready(function() {
-      $('.properties').resizable({ // doesnt work :C
-      });
-    } );
+    this.utils.makeResizable('.properties', 'left')
   }
 
 

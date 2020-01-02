@@ -2,11 +2,12 @@
 
 .properties {
     height: 100%;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.26);
 
     .properties-tab {
         height: 100%;
         width: 100%;
-        max-width: 350px;
+        // max-width: 350px;
         background-color: $primary;
         // overflow: scroll;
         // resize: horizontal;
@@ -73,20 +74,11 @@
 
 }
 
-.both {
-    position: absolute;
-    top: 0;bottom: 0; vertical-align: middle;
-    transform: translate(0, 25%);
-}
 .dropdown-icon {
     color: white;
 
     // position: absolute;
 }
 
-.inner-text {
-    // position: absolute;
-    // left: 0;
-    // padding-right: 1rem;
-}
+
 

@@ -15,7 +15,12 @@ html, body {
 }
 body {
     margin: 0;
+    overflow: hidden;
     font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+.ui-resizable-helper {
+    border: 1px dotted black;
 }
 
 

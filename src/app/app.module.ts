@@ -16,7 +16,6 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { PropertiesComponent } from './properties/properties.component';
 import { TreeComponent } from './tree/tree.component';
 import { WorkspaceComponent } from './workspace/workspace.component';
-import { CanvasComponent } from './canvas/canvas.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatTabsModule} from '@angular/material/tabs';
@@ -31,7 +30,6 @@ import {MatMenuModule} from '@angular/material/menu';
     PropertiesComponent,
     TreeComponent,
     WorkspaceComponent,
-    CanvasComponent,
     NavbarComponent
   ],
   imports: [
