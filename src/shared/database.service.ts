@@ -19,7 +19,7 @@ items: Observable<any[]>;
 
     /**
      * Listen for changes inside templates database collection
-     * 
+     *
      * @TODO - Only load DB once, when needed and save it locally to save traffic
      * edit: i tried, i couldnt
      */

@@ -12,7 +12,7 @@ if (environment.production) {
 
 /**
  * In production mode, the first page to open will be the landing module and its components
- * 
+ *
  * In Dev, the first component to load will always be the constructor.
  * We can later do routing or a dev button to quickly switch between the two
  */
