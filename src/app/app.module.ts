@@ -22,6 +22,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import { KeepHtmlPipe } from './keep-html.pipe';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import {MatMenuModule} from '@angular/material/menu';
     PropertiesComponent,
     TreeComponent,
     WorkspaceComponent,
-    NavbarComponent
+    NavbarComponent,
+    KeepHtmlPipe
   ],
   imports: [
     BrowserModule,
@@ -46,7 +49,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MatTabsModule,
     MatIconModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    DragDropModule
   ],
   providers: [DatabaseService],
   bootstrap: [AppComponent]

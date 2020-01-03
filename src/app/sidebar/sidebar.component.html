@@ -5,8 +5,16 @@
             <mat-icon class="tab-icon">storage</mat-icon>
             Templates
           </ng-template>
-          <div class="template-list list">
-            <mat-card class="card" *ngFor="let template of templates">
+          <div class="template-list list"
+               cdkDropList
+               cdkDropListSortingDisabled
+               id="templatesList"
+               [cdkDropListData]="templates"
+               [cdkDropListEnterPredicate]="noReturnPredicate"
+               cdkDropListConnectedTo="canvasList">
+            <mat-card class="card" *ngFor="let template of templates" cdkDrag>
+              <img *cdkDragPreview src="https://via.placeholder.com/300x125">
+              <div class="dragndrop-placeholder" *cdkDragPlaceholder></div>
               <mat-card-header>
                 <mat-card-title>{{template.title}}</mat-card-title>
                 <mat-card-subtitle>Some small description</mat-card-subtitle>
@@ -20,8 +28,16 @@
             <mat-icon class="tab-icon">widgets</mat-icon>
             Blocks
           </ng-template>
-          <div class="block-list list">
-            <mat-card class="card" *ngFor="let block of blocks">
+          <div class="block-list list"
+               cdkDropList
+               cdkDropListSortingDisabled
+               id="blocksList"
+               [cdkDropListData]="blocks"
+               [cdkDropListEnterPredicate]="noReturnPredicate"
+               cdkDropListConnectedTo="canvasList">
+            <mat-card class="card" *ngFor="let block of blocks" cdkDrag>
+              <img *cdkDragPreview src="https://via.placeholder.com/300x125">
+              <div class="dragndrop-placeholder" *cdkDragPlaceholder></div>
               <mat-card-header>
                 <mat-card-title>{{block.title}}</mat-card-title>
                 <mat-card-subtitle>Some small description</mat-card-subtitle>

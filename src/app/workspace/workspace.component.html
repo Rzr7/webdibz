@@ -1,5 +1,14 @@
 <div class="workspace">
-    <div class="canvas"> 
+    <div class="canvas"
+         cdkDropList
+         id="canvasList"
+         [cdkDropListData]="canvasBlocks"
+         [cdkDropListEnterPredicate]="isAllowed"
+         (cdkDropListDropped)="dropCanvas($event)"
+         (CdkDragExit)="dragExit($event)">
+      <div *ngFor="let block of canvasBlocks" cdkDragLockAxis="y" cdkDrag [innerHtml]="block.html | keepHtml">
+        <div class="dragndrop-placeholder" *cdkDragPlaceholder></div>
+      </div>
         <!-- Draggable's container-->
     </div>
 </div>
